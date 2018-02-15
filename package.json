@@ -1,0 +1,22 @@
+{
+  "name": "cleitonluiz.me",
+  "version": "1.0.0",
+  "description": "Meu site profissional",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clluiz/curriculo.git"
+  },
+  "author": "Cleiton Luiz Rocha Teodoro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clluiz/curriculo/issues"
+  },
+  "homepage": "https://github.com/clluiz/curriculo#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
