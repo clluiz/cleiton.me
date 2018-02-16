@@ -12,19 +12,21 @@ html {
 
 
 section {
-    height: 300px;
-    padding: 50px 0;
-    text-align: center;
+    height: 700px;
+    padding: 50px 50px;
 }
 
 .intro {
-    
+    background-color: var(--verde-claro);
+    color: #FFFFFF;
 }
 
 .about {
-    text-align: center;
-    background-color: var(--verde-claro);
-    color: #FFFFFF;
+
+}
+
+.role {
+    font-size: 3.5em;
 }
 
 .me {
