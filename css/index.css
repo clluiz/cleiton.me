@@ -1,6 +1,6 @@
 :root {
-  --main-color: #59a48b; 
-  --gray: #888888;
+  --main-color: #126f50; 
+  --gray: #666666;
   --white: #ffffff;
 }
 
@@ -10,12 +10,20 @@ html {
   font-family: 'Roboto', sans-serif; 
 }
 
+body {
+  margin: 0;
+}
+
+.content-section .home {
+  text-align: center;
+}
+
 h1 {
-  font-size: 3.5em;
+  font-size: 3.0em;
 }
 
 h2 {
-  font-size: 2.0em;
+  font-size: 2.5em;
 }
 
 .role {
@@ -23,7 +31,6 @@ h2 {
 }
 
 .content-section {
-  padding: 50px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,38 +43,6 @@ h2 {
 .contact i {
   display: inline-block;
   margin: 10px 0;
-}
-
-.contact-form {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form label {
-
-}
-
-.contact-form input {
-  width: 100%;
-  border: 1px solid #aaaaaa;
-  border-radius: 5px;
-  min-height: 40px;
-}
-
-.contact-form textarea {
-  border: 1px solid #aaaaaa;
-  border-radius: 5px;
-  min-height: 100px;
-}
-
-.contact-form__button {
-  background-color: var(--main-color);
-  border: none;
-  outline: none;
-  color: var(--white);
-  padding: 10px;
-  width: 100px;
 }
 
 .border-button {
@@ -83,19 +58,38 @@ h2 {
 .home {
   background-color: var(--main-color);
   color: var(--white);
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 80vh;
+  justify-content: flex-end;
+}
+
+.home__description {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  height: 50px;
+  background-color: white;
+  color: black;
+  width: 100%;
+}
+
+.home__title {
+  text-align: center;
+}
+
+.home__description p {
+  background-color: #eaeaea;
+  padding: 10px;
+  height: 100%;
+  margin: 0;
+  font-size: 1.2em;
 }
 
 .about {
   color: var(--gray);
   min-height: 100vh;
-}
-
-.content-section h2 {
-  color: var(--main-color);
 }
 
 .about img {
@@ -112,16 +106,19 @@ h2 {
   border-radius: 50%;
 }
 
-.header {
+.main-header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   background-color: var(--main-color);
   color: var(--white);
-  padding: 10px;
+  position : fixed;
+  top : 0;
+  left : 0;
+  width: 100%;
 }
 
-.header span {
+.main-header span {
   font-weight: bold;
 }
 
@@ -140,6 +137,26 @@ h2 {
   text-decoration: none;
   color: white;
   cursor: pointer;
+}
+
+.slider {
+  list-style-type: none;
+}
+
+.card {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #CCCCCC;
+}
+
+.card__header {
+  font-size: 3em;
+  color: var(--gray);
+}
+
+.card__header h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 /*

@@ -12,57 +12,69 @@
 
 <body>
 
-  <header class="header">
+  <header class="main-header">
     <nav>
       <ul class="menu">
-        <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
         <li><a href="resume_cleiton_luiz_english.pdf" target="_blank">RESUME</a></li>
-        <li class="border-button"><a href="#contact">CONTACT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="intro" class="content-section home">
-    <h1>Cleiton Luiz Rocha Teodoro</h1>
-    <span class="role">Fullstack Software Engineer</span>
+  <section id="home" class="content-section home">
+
+    <div class="home__title">
+      <h1>Cleiton Luiz Rocha Teodoro</h1>
+
+      <h2>Fullstack Software Engineer</h2>
+    </div>
+
+    <div class="home__description">
+
+      <p>
+          Helping start-ups, small businesses, and agencies achieve high quality websites and exceptional user experience
+      </p>
+
+    </div>
+
   </section>
 
   <section id="about" class="content-section about">
-    <h2>Sobre</h2>
-    <img src="./imagens/foto.jpg" width="150px" height="150px" />
+    <h2>About</h2>
     <p>
-      I have 9 years of experience developing web applications which contributed in the environmental area, public services and
+      I have 9 years of experience developing web applications which contributed in the environmental area, public
+      services and
       private companies.
-      I'm always trying to find the best solutions and technologies to solve problems and to discuss it with open to discuss that solutions with my colleagues.
+      I'm always trying to find the best solutions and technologies to solve problems and to discuss it with open to
+      discuss that solutions with my colleagues.
       I have turned my attention to learning Data Science and focused my career in becoming a fullstack javascript
-      developer learning more about node and modern frontend framework
+      developer learning more about node and modern frontend framework.
     </p>
   </section>
 
   <section id="portfolio" class="content-section">
     <h2>Portfolio</h2>
+
+    <ul class="slider">
+      <li>
+        <div class="card">
+          <header class="card__header">
+            <h3>Verificador independente</h3>
+          </header>
+          <p>Sistema de verifcação e auditoria independente feito para obras de engenharia.</p>
+          <p>Desenvolvido para: <a href="http://www.houer.com.br/" target="_blank">Houer Concessões</a></p>
+          <img src="./imagens/nodejs.png" alt="Node.js" title="Node.js" height="32" height="32" />
+          <img src="./imagens/expressjs.png" alt="Express.js" title="Express.js" height="32" height="32" />
+          <img src="./imagens/vue.png" alt="Vue.js" title="Vue.js" height="32" height="32" />
+          <img src="./imagens/mongodb.png" alt="MongoDB" title="MongoDB" height="32" height="32" />
+        </div>
+      </li>
+    </ul>
+
   </section>
 
-  <section id="contact" class="content-section contact">
-
-    <h2>Contact</h2>
-
-    <i>Interested in my work? Have a project and think I can help you? Want to hire me to your company? Call me!</i>
-
-    <form class="contact-form">
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name"/>
-      <label for="name">Email</label>
-      <input type="email" name="email" id="email"/>
-      <label for="area">Message</label>
-      <textarea name="area" id="message"></textarea>
-      <button type="submit" class="contact-form__button">ENVIAR</button>
-    </form>
-
-  </section>
-  
   <footer>
 
   </footer>
