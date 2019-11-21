@@ -8,11 +8,16 @@
   <title>Cleiton Luiz Rocha Teodoro</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/index.css">
+  <script src="https://kit.fontawesome.com/6d8898a71c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <header class="main-header">
+    <span>
+      <i class="fas fa-laptop-code"></i>
+      Cleiton Luiz Rocha Teodoro
+    </span>
     <nav>
       <ul class="menu">
         <li><a href="#about">ABOUT</a></li>
@@ -26,17 +31,10 @@
   <section id="home" class="content-section home">
 
     <div class="home__title">
-      <h1>Cleiton Luiz Rocha Teodoro</h1>
-
-      <h2>Fullstack Software Engineer</h2>
-    </div>
-
-    <div class="home__description">
-
-      <p>
+      <h1>Fullstack Software Engineer</h1>
+      <h2>
         Helping start-ups, small businesses, and agencies achieve high quality websites and exceptional user experience
-      </p>
-
+      </h2>
     </div>
 
   </section>
@@ -44,6 +42,7 @@
   <section id="about" class="content-section content-section--row about">
 
     <h3 class="section__title">
+      <i class="fas fa-info-circle"></i>
       About
     </h3>
 
@@ -59,6 +58,7 @@
   <section id="portfolio" class="content-section content-section--row portfolio">
 
     <h3 class="section__title">
+      <i class="fas fa-briefcase"></i>
       Portfolio
     </h3>
 
@@ -73,6 +73,7 @@
 
   <section id="contact" class="content-section content-section--row contact">
     <h3 class="section__title">
+      <i class="fas fa-mail-bulk"></i>
       Contact
     </h3>
 
@@ -82,26 +83,38 @@
           <label>
             Nome
           </label>
-          <input type="text"/>
+          <input type="text" required />
         </div>
         <div>
           <label>
             Email
           </label>
-          <input type="email"/>
+          <input type="email" required />
         </div>
         <div>
           <label>
             Mensagem
           </label>
-          <textarea></textarea>
+          <textarea required></textarea>
         </div>
+        <button type="submit">ENVIAR</button>
       </form>
     </div>
   </section>
 
   <footer>
-
+    <div>
+      <a href="https://www.linkedin.com/in/cleiton-luiz-nodejs-javascript/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/clluiz">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://stackoverflow.com/users/781976/clluiz">
+        <i class="fab fa-stack-overflow"></i>
+      </a>
+    </div>
+    <small class="copyright">Copyright © 2019 Cleiton Luiz Rocha Teodoro • Fullstack software engineer</small>
   </footer>
 
 </body>
