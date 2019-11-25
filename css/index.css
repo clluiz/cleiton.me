@@ -1,9 +1,9 @@
 :root {
   --main-color: #1c795a; 
   --gray: #1D1E2C;
-  --white: #ffffff;
+  --white: #FFFFFF;
   --light-gray: #6A7B76;
-  --primary-button: #63ADF2;
+  --secondary-color: #63ADF2;
 }
 
 html {
@@ -28,63 +28,29 @@ h2 {
   font-size: 1.4em;
 }
 
-.content-section .home {
-  text-align: center;
-}
-
 .content-section {
-  display: flex;
-  flex-direction: column;
-}
-
-.content-section--row {
-  flex-direction: row;
-  align-items: center;
-}
-
-.content-section--column {
-  flex-direction: column;
-  align-items: center;
+  min-height: 500px;
 }
 
 .home {
-  background-color: var(--main-color);
-  color: var(--white);
+  color: var(--main-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 80vh;
   justify-content: center;
+  border-bottom: 1px solid var(--secondary-color);
+  border-top: 1px solid var(--secondary-color);
+}
+
+.home h2 {
+  color: var(--light-gray);
 }
 
 .home__title {
   text-align: center;
 }
 
-.home__description p {
-  background-color: #e9e9e9;
-  padding: 15px;
-  height: 100%;
-  margin: 0;
-  font-size: 1.2em;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.about {
-  color: var(--gray);
-  height: 100vh;
-}
-
-.portfolio {
-  color: var(--gray);
-  height: 100vh;
-}
-
-.contact {
-  color: var(--gray);
-  height: 100vh;
-}
 
 form {
   width: 600px;
@@ -109,7 +75,7 @@ form button[type=submit] {
   height: 50px;
   border: none;
   color: white;
-  background-color: var(--primary-button);
+  background-color: var(--secondary-color);
   width: 120px;
   font-weight: bold;
 }
@@ -122,36 +88,21 @@ form textarea {
 }
 
 .section__title {
-  width: 30%;
   text-align: center;
   font-size: 2em;
-  color: #1481BA;
+  color: var(--secondary-color);
   text-transform: uppercase;
-}
-
-.section__content {
-  width: 70%;
 }
 
 .section__content p {
   font-size: 1.3em;
-}
-
-.me {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
+} 
 
 .main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--main-color);
-  color: var(--white);
-  position : fixed;
-  top : 0;
-  left : 0;
+  color: var(--main-color);
   width: 100%;
 }
 
@@ -172,29 +123,9 @@ form textarea {
 
 .menu li a {
   text-decoration: none;
-  color: white;
+  color: var(--main-color);
   cursor: pointer;
   font-weight: bold;
-}
-
-.slider {
-  list-style-type: none;
-}
-
-.card {
-  padding: 15px;
-  text-align: center;
-  border: 1px solid #CCCCCC;
-}
-
-.card__header {
-  font-size: 3em;
-  color: var(--gray);
-}
-
-.card__header h3 {
-  margin-block-start: 0;
-  margin-block-end: 0;
 }
 
 footer {
@@ -218,11 +149,11 @@ footer a {
 
 footer .copyright {
   font-size: 0.8em;
-  color: var(--gray);
+  color: var(--white);
 }
 
 footer a:visited {
-  color: #DDDDDD;
+  color: var(--white);
 }
 
 /*
