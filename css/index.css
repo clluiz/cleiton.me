@@ -75,6 +75,7 @@ form label {
 form input {
   height: 50px;
   border: none;
+  width: 350px;
   border-bottom: 1px solid var(--gray);
 }
 
@@ -94,6 +95,7 @@ form textarea {
   height: 150px;
   border: none;
   border-bottom: 1px solid var(--gray);
+  width: 100%;
 }
 
 .section__title {
@@ -102,10 +104,6 @@ form textarea {
   color: var(--secondary-color);
   text-transform: uppercase;
 }
-
-.section__content p {
-  font-size: 1.3em;
-} 
 
 .main-header {
   display: flex;
@@ -186,11 +184,18 @@ footer a:visited {
 
 .card p {
   text-align: justify;
+  color: var(--gray);
 }
 
 .card .fas, .far {
   font-size: 3.0em;
   color : var(--main-color);
+}
+
+.contact .section__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /*
