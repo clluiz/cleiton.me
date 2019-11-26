@@ -6,6 +6,14 @@
   --secondary-color: #63ADF2;
 }
 
+@media (max-width: 600px) 
+{
+  .main-header 
+   {
+    display: none !important;
+   }
+}
+
 html {
   background-color: var(--white);
   font-size: 16px;
@@ -53,6 +61,13 @@ h2 {
   text-align: center;
 }
 
+.home p {
+  color: var(--gray);
+  font-size: 1.1em;
+  max-width: 500px;
+  text-align: center;  
+}
+
 .about {
   display: flex;
   flex-direction: column;
@@ -63,8 +78,6 @@ h2 {
   text-align: justify;
   font-size: 1.3em;
   color: var(--light-gray);
-  max-width: 500px;
-  width: 100%;
 }
 
 form label {
@@ -73,7 +86,6 @@ form label {
 
 form input {
   height: 50px;
-  width: 100%;
   border: none;
   border-bottom: 1px solid var(--light-gray);
 }
@@ -87,13 +99,11 @@ form button[type=submit] {
   border: none;
   color: white;
   background-color: var(--secondary-color);
-  width: 120px;
   font-weight: bold;
 }
 
 form textarea {
   height: 150px;
-  width: 100%;
   border: none;
   border-bottom: 1px solid var(--light-gray);
 }
@@ -114,7 +124,6 @@ form textarea {
   justify-content: space-between;
   align-items: center;
   color: var(--main-color);
-  width: 100%;
 }
 
 .main-header span {
