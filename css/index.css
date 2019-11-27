@@ -70,6 +70,7 @@ h2 {
 
 form label {
   display: block;
+  color: var(--gray);
 }
 
 form input {
@@ -85,10 +86,12 @@ form > div {
 
 form button[type=submit] {
   height: 50px;
+  width: 100px;
   border: none;
   color: white;
   background-color: var(--secondary-color);
   font-weight: bold;
+  float: right;
 }
 
 form textarea {
