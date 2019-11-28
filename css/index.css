@@ -47,7 +47,6 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
   justify-content: center;
   border-top: 1px solid var(--secondary-color);
 }
@@ -68,23 +67,27 @@ h2 {
   text-align: center;  
 }
 
-form label {
+.contact form {
+  width: 100%;
+}
+
+.contact form label {
   display: block;
   color: var(--gray);
 }
 
-form input {
+.contact form input {
   height: 50px;
   border: none;
-  width: 350px;
+  width: 100%;
   border-bottom: 1px solid var(--gray);
 }
 
-form > div {
+.contact form > div {
   margin-bottom: 15px;
 }
 
-form button[type=submit] {
+.contact form button[type=submit] {
   height: 50px;
   width: 100px;
   border: none;
@@ -94,7 +97,7 @@ form button[type=submit] {
   float: right;
 }
 
-form textarea {
+.contact form textarea {
   height: 150px;
   border: none;
   border-bottom: 1px solid var(--gray);
@@ -163,7 +166,6 @@ footer a:visited {
 
 .services {
   background-color: var(--light-gray);
-  padding-top: 20px;
 }
 
 .services__list {
@@ -199,6 +201,10 @@ footer a:visited {
 .card .fas, .far {
   font-size: 3.0em;
   color : var(--main-color);
+}
+
+.contact {
+  margin-bottom: 20px;
 }
 
 .contact .section__content {
