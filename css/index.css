@@ -68,7 +68,7 @@ h2 {
 }
 
 .contact form {
-  width: 100%;
+  width: 500px;
 }
 
 .contact form label {
@@ -109,6 +109,7 @@ h2 {
   font-size: 2em;
   color: var(--secondary-color);
   text-transform: uppercase;
+  margin: 0;
 }
 
 .main-header {
@@ -165,6 +166,7 @@ footer a:visited {
 }
 
 .services {
+  padding-top: 20px;
   background-color: var(--light-gray);
 }
 
@@ -218,4 +220,40 @@ footer a:visited {
  */
 .bold {
   font-weight: bold;
+}
+
+
+@media (max-width: 360px) {
+  .contact form {
+    width: 100%;
+  }
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.project {
+  width: 800px;
+  height: 300px;
+  border: 1px solid var(--light-gray);
+  display: flex;
+}
+
+.houer {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.project h4 {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.portfolio {
+  margin-top: 20px;
 }
