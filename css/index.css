@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins/Poppins-Medium.ttf');
+}
+
 :root {
   --main-color: #1c795a; 
   --white: #FFFFFF;
