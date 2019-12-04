@@ -13,40 +13,42 @@
 
 <body>
 
-  <header class="main-header">
+  <header class="header">
     <span>
       <i class="fas fa-laptop-code"></i>
       Cleiton Luiz Rocha Teodoro
     </span>
     <nav>
-      <ul class="row menu">
-        <li class="menu__item"><a class="menu__link" href="#services">SERVIÇOS</a></li>
-        <li class="menu__item"><a class="menu__link" href="#portfolio">PORTFOLIO</a></li>
-        <li class="menu__item"><a class="menu__link" href="resume_cleiton_luiz_english.pdf" target="_blank">CURRÍCULO</a></li>
-        <li class="menu__item"><a class="menu__link" href="#contact">CONTATO</a></li>
+      <ul class="menu">
+        <li class="menu-item"><a class="menu-link" href="#services">SERVIÇOS</a></li>
+        <li class="menu-item"><a class="menu-link" href="#portfolio">PORTFOLIO</a></li>
+        <li class="menu-item"><a class="menu-link" href="resume_cleiton_luiz_english.pdf" target="_blank">CURRÍCULO</a></li>
+        <li class="menu-item"><a class="menu-link" href="#contact">CONTATO</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="home" class="content-section home">
-    <h1>Fullstack Software Engineer</h1>
-    <h2>
-      Ajudando startup's e pequenas e médias empresas a criar sites, aplicações web e aplicações móveis de alta
-      qualidade.
-    </h2>
-    <p>
-      Tenho 10 anos de experiência desenvolvendo sites, aplicações web e aplicações móveis que ajudaram a resolver
-      problemas nos setores público e privado
-    </p>
+  <section id="home" class="l-section">
+    <div class="home">
+      <h1>Fullstack Software Engineer</h1>
+      <h2>
+        Ajudando startup's e pequenas e médias empresas a criar sites, aplicações web e aplicações móveis de alta
+        qualidade.
+      </h2>
+      <p>
+        Tenho 10 anos de experiência desenvolvendo sites, aplicações web e aplicações móveis que ajudaram a resolver
+        problemas nos setores público e privado
+      </p>
+    </div>
   </section>
 
-  <section id="services" class="content-section services">
-    <h3 class="section__title">
+  <section id="services" class="l-section">
+    <h3 class="section-title">
       <img src="imagens/services.svg" width="32" height="32" />
       Serviços
     </h3>
-    <div class="services__list">
-      <div class="card">
+    <div class="services-list">
+      <div class="services-list-card">
         <h3>Aplicações web</h3>
         <div>
           <img src="imagens/webapp.svg" width="128" height="128"
@@ -56,7 +58,7 @@
           Desenvolvimento de aplicações web sob medida para suas necessidades.
         </p>
       </div>
-      <div class="card">
+      <div class="services-list-card">
         <h3>Desenvolvimento de sites</h3>
         <div>
           <img src="imagens/browser.svg" width="128" height="128" alt="Imagem de um navegador para internet" />
@@ -65,7 +67,7 @@
           Criação de sites responsivos que funcionam em uma grande variedade de dispositivos
         </p>
       </div>
-      <div class="card">
+      <div class="services-list-card">
         <h3>Aplicativos móveis</h3>
         <div>
           <img src="imagens/smartphone.svg" width="128" height="128" alt="Imagem de um smartphone" />
@@ -77,52 +79,48 @@
     </div>
   </section>
 
-  <section id="portfolio" class="content-section portfolio">
-    <h3 class="section__title">
+  <section id="portfolio" class="l-section">
+    <h3 class="section-title">
       <img src="imagens/portfolio.svg" width="40" height="40" />
       Portfolio
     </h3>
-    <div class="section__content">
-      <div class="projects-list">
-        <div class="project">
-          <img width="218" src="http://www.houer.com.br/wp-content/uploads/2019/11/Marca-Houer_grupo-2.png" />
-          <p>Verificador independente</p>
-        </div>
+    <div class="projects-list">
+      <div class="project-list-item">
+        <img width="218" src="http://www.houer.com.br/wp-content/uploads/2019/11/Marca-Houer_grupo-2.png" />
+        <p>Verificador independente</p>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="content-section contact">
-    <h3 class="section__title">
+  <section id="contact" class="l-section">
+    <h3 class="section-title">
       <img src="imagens/contact.svg" width="32" height="32" />
       Contato
     </h3>
-    <div class="section__content">
-      <form>
-        <div>
-          <label>
-            Nome
-          </label>
-          <input type="text" required />
-        </div>
-        <div>
-          <label>
-            Email
-          </label>
-          <input type="email" required />
-        </div>
-        <div>
-          <label>
-            Mensagem
-          </label>
-          <textarea required></textarea>
-        </div>
-        <button type="submit">ENVIAR</button>
-      </form>
-    </div>
+    <form class="contact-form">
+      <div>
+        <label>
+          Nome
+        </label>
+        <input type="text" required />
+      </div>
+      <div>
+        <label>
+          Email
+        </label>
+        <input type="email" required />
+      </div>
+      <div>
+        <label>
+          Mensagem
+        </label>
+        <textarea required></textarea>
+      </div>
+      <button type="submit">ENVIAR</button>
+    </form>
   </section>
 
-  <footer>
+  <footer class="footer">
     <div>
       <a href="https://www.linkedin.com/in/cleiton-luiz-nodejs-javascript/">
         <i class="fab fa-linkedin"></i>
