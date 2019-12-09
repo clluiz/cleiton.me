@@ -4,12 +4,12 @@
 }
 
 :root {
-  --main-color: #1c795a; 
+  --main-color: #407300; 
   --white: #FFFFFF;
-  --gray: #6A7B76;
-  --light-gray: #CBD2D0;
-  --dark-gray: #434846;
-  --secondary-color: rgb(29, 128, 221);
+  --gray: #474b4f;
+  --light-gray: #6b6e70;
+  --dark-gray: #222629;
+  --secondary-color: #86c232;
 }
 
 /** BASE **/
@@ -42,7 +42,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   color: var(--main-color);
-  border-bottom: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--main-color);
 }
 
 .header > span {
@@ -132,10 +132,18 @@ h2 {
   text-align: center;  
 }
 
+.service {
+  background-color: var(--dark-gray);
+}
+
+.service .section-title {
+  color: var(--white);
+}
+
 .section-title {
   text-align: center;
   font-size: 2em;
-  color: var(--secondary-color);
+  color: var(--main-color);
   text-transform: uppercase;
   margin: 0;
 }
@@ -145,7 +153,6 @@ h2 {
   flex-direction: row;
   flex-flow: wrap;
   justify-content: space-evenly;
-  background-color: var(--light-gray);
 }
 
 .services-list-card {
@@ -161,12 +168,12 @@ h2 {
 }
 
 .services-list-card h3 {
-  color: var(--secondary-color);
+  color: var(--white);
 }
 
 .services-list-card p {
   text-align: justify;
-  color: var(--dark-gray);
+  color: var(--white);
   font-weight: bold;
 }
 
@@ -190,7 +197,6 @@ h2 {
   justify-content: center;
   cursor: pointer;
   align-items: center;
-  background-color: var(--light-gray);
 }
 
 .contact-form {
@@ -220,7 +226,7 @@ h2 {
   width: 100px;
   border: none;
   color: white;
-  background-color: var(--secondary-color);
+  background-color: var(--main-color);
   font-weight: bold;
   float: right;
 }
@@ -231,4 +237,8 @@ h2 {
   border: 1px solid var(--light-gray);
   width: 100%;
   border-radius: 5px;
+}
+
+.iv {
+  background-color: #b1e0ff;
 }
