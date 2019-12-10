@@ -208,7 +208,10 @@ h2 {
   width: 80%;
 }
 
-
+.contact-form-description {
+  text-align: center;
+  width: 100%;
+}
 
 .contact-form label {
   display: block;
