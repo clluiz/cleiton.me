@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/Poppins/Poppins-Medium.ttf');
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Medium.ttf");
 }
 
 :root {
-  --main-color: #00467b; 
-  --white: #FFFFFF;
+  --main-color: #00467b;
+  --white: #ffffff;
   --gray: #474b4f;
   --light-gray: #d4d4d4;
   --dark-gray: #222629;
@@ -13,7 +13,7 @@
 }
 
 #home {
-  background-image: url('../imagens/christian-perner-UKLIuV8rAks-unsplash.jpg');
+  background-image: url("../imagens/christian-perner-UKLIuV8rAks-unsplash.jpg");
   background-size: 100% 100%;
 }
 
@@ -21,7 +21,7 @@
 html {
   background-color: var(--white);
   font-size: 16px;
-  font-family: 'Poppins', sans-serif; 
+  font-family: "Poppins", sans-serif;
   margin: 0 auto;
   padding: 0;
 }
@@ -46,19 +46,21 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--main-color); 
+  color: var(--main-color);
 }
 
 .header > span {
   font-weight: bold;
 }
 
-@media (max-width: 600px) 
-{
-  .header 
-   {
+@media (max-width: 600px) {
+  nav {
     display: none;
-   }
+  }
+  .name {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .footer {
@@ -74,7 +76,7 @@ h2 {
   font-size: 1.5em;
   text-decoration: none;
   margin-left: 15px;
-  color : var(--white);
+  color: var(--white);
 }
 
 .footer .copyright {
@@ -133,7 +135,7 @@ h2 {
   color: var(--secondary-color);
   font-size: 1.1em;
   max-width: 500px;
-  text-align: center;  
+  text-align: center;
 }
 
 .service {
@@ -181,9 +183,10 @@ h2 {
   font-weight: bold;
 }
 
-.services-list-card .fas, .far {
-  font-size: 3.0em;
-  color : var(--main-color);
+.services-list-card .fas,
+.far {
+  font-size: 3em;
+  color: var(--main-color);
 }
 
 .projects-list {
@@ -201,6 +204,10 @@ h2 {
   justify-content: center;
   cursor: pointer;
   align-items: center;
+}
+
+#contact {
+  min-height: 650px;
 }
 
 .contact-form {
@@ -225,7 +232,7 @@ h2 {
   border: 1px solid var(--light-gray);
   border-radius: 5px;
   font-size: 1.2em;
-  font-family: 'Poppins', sans-serif; 
+  font-family: "Poppins", sans-serif;
   color: var(--gray);
 }
 
@@ -233,7 +240,7 @@ h2 {
   margin-bottom: 15px;
 }
 
-.contact-form button[type=submit] {
+.contact-form button[type="submit"] {
   height: 50px;
   width: 100px;
   border: none;
@@ -250,7 +257,7 @@ h2 {
   width: 100%;
   border-radius: 5px;
   font-size: 1.2em;
-  font-family: 'Poppins', sans-serif; 
+  font-family: "Poppins", sans-serif;
   color: var(--gray);
 }
 
