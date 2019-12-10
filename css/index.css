@@ -4,12 +4,17 @@
 }
 
 :root {
-  --main-color: #407300; 
+  --main-color: #00467b; 
   --white: #FFFFFF;
   --gray: #474b4f;
-  --light-gray: #6b6e70;
+  --light-gray: #d4d4d4;
   --dark-gray: #222629;
-  --secondary-color: #86c232;
+  --secondary-color: #00467b;
+}
+
+#home {
+  background-image: url('../imagens/christian-perner-UKLIuV8rAks-unsplash.jpg');
+  background-size: 100% 100%;
 }
 
 /** BASE **/
@@ -29,11 +34,11 @@ ul {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.2em;
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: 1.1em;
 }
 
 /** LAYOUT **/
@@ -41,8 +46,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--main-color);
-  border-bottom: 1px solid var(--main-color);
+  color: var(--main-color); 
 }
 
 .header > span {
@@ -109,7 +113,6 @@ h2 {
 }
 
 .home {
-  color: var(--main-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,15 +121,16 @@ h2 {
 
 .home > h1 {
   text-align: center;
+  color: var(--main-color);
 }
 
 .home > h2 {
-  color: var(--gray);
+  color: var(--secondary-color);
   text-align: center;
 }
 
 .home > p {
-  color: var(--gray);
+  color: var(--secondary-color);
   font-size: 1.1em;
   max-width: 500px;
   text-align: center;  
@@ -204,9 +208,11 @@ h2 {
   width: 80%;
 }
 
+
+
 .contact-form label {
   display: block;
-  color: var(--dark-gray);
+  color: var(--main-color);
 }
 
 .contact-form input {
@@ -215,6 +221,9 @@ h2 {
   width: 100%;
   border: 1px solid var(--light-gray);
   border-radius: 5px;
+  font-size: 1.2em;
+  font-family: 'Poppins', sans-serif; 
+  color: var(--gray);
 }
 
 .contact-form > div {
@@ -237,6 +246,9 @@ h2 {
   border: 1px solid var(--light-gray);
   width: 100%;
   border-radius: 5px;
+  font-size: 1.2em;
+  font-family: 'Poppins', sans-serif; 
+  color: var(--gray);
 }
 
 .iv {
