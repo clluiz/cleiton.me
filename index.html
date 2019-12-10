@@ -1,145 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="description"
-    content="Página criada para mostrar meu trabalho como desenvolvedor fullstack e também para quem quiser contratar meus serviços" />
-  <title>Cleiton Luiz Rocha Teodoro</title>
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description"
+      content="Página criada para mostrar meu trabalho como desenvolvedor fullstack e também para quem quiser contratar meus serviços" />
+    <title>Cleiton Luiz Rocha Teodoro</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+
+  <body>
+
+    <section id="home" class="l-section">
+      <header class="header">
+        <span class="name">
+          <i class="fas fa-laptop-code"></i>
+          Cleiton Luiz Rocha Teodoro
+        </span>
+        <nav>
+          <ul class="menu">
+            <li class="menu-item"><a class="menu-link" href="#services">SERVIÇOS</a></li>
+            <li class="menu-item"><a class="menu-link" href="#portfolio">PORTFOLIO</a></li>
+            <li class="menu-item"><a class="menu-link" href="resume_cleiton_luiz_english.pdf"
+                target="_blank">CURRÍCULO</a>
+            </li>
+            <li class="menu-item"><a class="menu-link" href="#contact">CONTATO</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="home">
+        <h1>Fullstack Software Engineer</h1>
+        <h2>
+          Ajudando startup's e pequenas e médias empresas a criar sites, aplicações web e aplicações móveis de alta
+          qualidade.
+        </h2>
+        <p>
+          Tenho 10 anos de experiência desenvolvendo sites, aplicações web e aplicações móveis que ajudaram a resolver
+          problemas nos setores público e privado
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="l-section service">
+      <h3 class="section-title">
+        Serviços
+      </h3>
+      <div class="services-list">
+        <div class="services-list-card">
+          <h3>Aplicações web</h3>
+          <div>
+            <img src="imagens/webapp.svg" width="128" height="128"
+              alt="Imagem do processo de desenvolvimento de uma aplicação" />
+          </div>
+          <p>
+            Desenvolvimento de aplicações web sob medida para suas necessidades.
+          </p>
+        </div>
+        <div class="services-list-card">
+          <h3>Desenvolvimento de sites</h3>
+          <div>
+            <img src="imagens/browser.svg" width="128" height="128" alt="Imagem de um navegador para internet" />
+          </div>
+          <p>
+            Criação de sites responsivos que funcionam em uma grande variedade de dispositivos
+          </p>
+        </div>
+        <div class="services-list-card">
+          <h3>Aplicativos móveis</h3>
+          <div>
+            <img src="imagens/smartphone.svg" width="128" height="128" alt="Imagem de um smartphone" />
+          </div>
+          <p>
+            Desenvolvimento de aplicações móveis para Android e iOS
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="l-section">
+      <h3 class="section-title">
+        Portfolio
+      </h3>
+      <div class="projects-list">
+        <div class="project-list-item iv">
+          <img width="218" src="imagens/logo-inve-color.svg" alt="Logo verificador independente" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="l-section">
+      <h3 class="section-title">
+        Contato
+      </h3>
+      <div class="contact-form-description">Interessado em meu trabalho? Entre em contato!</div>
+      <form class="contact-form">
+        <div>
+          <label for="name">
+            Nome
+          </label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div>
+          <label for="email">
+            Email
+          </label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div>
+          <label for="subject">
+            Assunto
+          </label>
+          <input id="subject" name="subject" type="text" required />
+        </div>
+        <div>
+          <label for="message">
+            Mensagem
+          </label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">ENVIAR</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div>
+        <a href="https://www.linkedin.com/in/cleiton-luiz-nodejs-javascript/" aria-label="Linkedin">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/clluiz" aria-label="Github">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <small class="copyright">Copyright © 2019 Cleiton Luiz Rocha Teodoro</small>
+      <div>
+      </div>
+    </footer>
+
+  </body>
+
   <script src="https://kit.fontawesome.com/6d8898a71c.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-
-
-  <section id="home" class="l-section">
-    <header class="header">
-      <span class="name">
-        <i class="fas fa-laptop-code"></i>
-        Cleiton Luiz Rocha Teodoro
-      </span>
-      <nav>
-        <ul class="menu">
-          <li class="menu-item"><a class="menu-link" href="#services">SERVIÇOS</a></li>
-          <li class="menu-item"><a class="menu-link" href="#portfolio">PORTFOLIO</a></li>
-          <li class="menu-item"><a class="menu-link" href="resume_cleiton_luiz_english.pdf"
-              target="_blank">CURRÍCULO</a>
-          </li>
-          <li class="menu-item"><a class="menu-link" href="#contact">CONTATO</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="home">
-      <h1>Fullstack Software Engineer</h1>
-      <h2>
-        Ajudando startup's e pequenas e médias empresas a criar sites, aplicações web e aplicações móveis de alta
-        qualidade.
-      </h2>
-      <p>
-        Tenho 10 anos de experiência desenvolvendo sites, aplicações web e aplicações móveis que ajudaram a resolver
-        problemas nos setores público e privado
-      </p>
-    </div>
-  </section>
-
-  <section id="services" class="l-section service">
-    <h3 class="section-title">
-      Serviços
-    </h3>
-    <div class="services-list">
-      <div class="services-list-card">
-        <h3>Aplicações web</h3>
-        <div>
-          <img src="imagens/webapp.svg" width="128" height="128"
-            alt="Imagem do processo de desenvolvimento de uma aplicação" />
-        </div>
-        <p>
-          Desenvolvimento de aplicações web sob medida para suas necessidades.
-        </p>
-      </div>
-      <div class="services-list-card">
-        <h3>Desenvolvimento de sites</h3>
-        <div>
-          <img src="imagens/browser.svg" width="128" height="128" alt="Imagem de um navegador para internet" />
-        </div>
-        <p>
-          Criação de sites responsivos que funcionam em uma grande variedade de dispositivos
-        </p>
-      </div>
-      <div class="services-list-card">
-        <h3>Aplicativos móveis</h3>
-        <div>
-          <img src="imagens/smartphone.svg" width="128" height="128" alt="Imagem de um smartphone" />
-        </div>
-        <p>
-          Desenvolvimento de aplicações móveis para Android e iOS
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="portfolio" class="l-section">
-    <h3 class="section-title">
-      Portfolio
-    </h3>
-    <div class="projects-list">
-      <div class="project-list-item iv">
-        <img width="218" src="imagens/logo-inve-color.svg" alt="Logo verificador independente" />
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="l-section">
-    <h3 class="section-title">
-      Contato
-    </h3>
-    <div class="contact-form-description">Interessado em meu trabalho? Entre em contato!</div>
-    <form class="contact-form">
-      <div>
-        <label for="name">
-          Nome
-        </label>
-        <input id="name" name="name" type="text" required />
-      </div>
-      <div>
-        <label for="email">
-          Email
-        </label>
-        <input id="email" name="email" type="email" required />
-      </div>
-      <div>
-        <label for="subject">
-          Assunto
-        </label>
-        <input id="subject" name="subject" type="text" required />
-      </div>
-      <div>
-        <label for="message">
-          Mensagem
-        </label>
-        <textarea id="message" name="message" required></textarea>
-      </div>
-      <button type="submit">ENVIAR</button>
-    </form>
-  </section>
-
-  <footer class="footer">
-    <div>
-      <a href="https://www.linkedin.com/in/cleiton-luiz-nodejs-javascript/" aria-label="Linkedin">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/clluiz" aria-label="Github">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <small class="copyright">Copyright © 2019 Cleiton Luiz Rocha Teodoro</small>
-    <div>
-    </div>
-  </footer>
-
-</body>
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 
 </html>
