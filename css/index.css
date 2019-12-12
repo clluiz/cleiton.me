@@ -191,19 +191,18 @@ h2 {
 
 .projects-list {
   display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
   justify-content: center;
 }
 
 .project-list-item {
-  width: 250px;
+  width: 800px;
   height: 250px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   cursor: pointer;
   align-items: center;
+  flex-flow: wrap;
 }
 
 #contact {
@@ -261,6 +260,24 @@ h2 {
   color: var(--gray);
 }
 
-.iv {
+.project-logo {
   background-color: #b1e0ff;
+  height: 100%;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.project-description {
+  width: 400px;
+  height: 100%;
+}
+
+.iv .project-logo {
+  background-color: #b1e0ff;
+}
+
+.iv .project-description {
+  background-color: var(--dark-gray);
+  color: white;
 }
