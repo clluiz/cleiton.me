@@ -53,13 +53,17 @@ h2 {
   font-weight: bold;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   nav {
     display: none;
   }
   .name {
     text-align: center;
     width: 100%;
+  }
+
+  .project-list-item-description {
+    display: none;
   }
 }
 
@@ -195,7 +199,7 @@ h2 {
 }
 
 .project-list-item {
-  width: 800px;
+  width: 1000px;
   height: 250px;
   display: flex;
   flex-direction: row;
@@ -203,6 +207,42 @@ h2 {
   cursor: pointer;
   align-items: center;
   flex-flow: wrap;
+}
+
+.project-list-item-logo {
+  background-color: #b1e0ff;
+  height: 100%;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.project-list-item-description {
+  width: 750px;
+  height: 100%;
+}
+
+.project-list-item-description p {
+  padding: 10px;
+  text-align: justify;
+}
+
+.iv .project-list-item-logo {
+  background-color: #b1e0ff;
+}
+
+.iv .project-list-item-description {
+  background-color: var(--dark-gray);
+  color: var(--white);
+}
+
+.techs a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.techs a:visited {
+  color : var(--white);
 }
 
 #contact {
@@ -258,26 +298,4 @@ h2 {
   font-size: 1.2em;
   font-family: "Poppins", sans-serif;
   color: var(--gray);
-}
-
-.project-logo {
-  background-color: #b1e0ff;
-  height: 100%;
-  width: 250px;
-  display: flex;
-  justify-content: center;
-}
-
-.project-description {
-  width: 400px;
-  height: 100%;
-}
-
-.iv .project-logo {
-  background-color: #b1e0ff;
-}
-
-.iv .project-description {
-  background-color: var(--dark-gray);
-  color: white;
 }
