@@ -217,6 +217,10 @@ h2 {
   justify-content: center;
 }
 
+.project-list-item-logo a {
+  display: inherit;
+}
+
 .project-list-item-description {
   width: 750px;
   height: 100%;
