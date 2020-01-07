@@ -49,8 +49,10 @@ h2 {
   color: var(--main-color);
 }
 
-.header > span {
+.name {
   font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -58,8 +60,10 @@ h2 {
     display: none;
   }
   .name {
-    text-align: center;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .project-list-item-description {
@@ -76,20 +80,18 @@ h2 {
   font-weight: bold;
 }
 
-.footer a {
-  font-size: 1.5em;
-  text-decoration: none;
-  margin-left: 15px;
-  color: var(--white);
-}
-
 .footer .copyright {
   font-size: 0.8em;
   color: var(--white);
 }
 
 .footer a:visited {
-  color: var(--white);
+  color: var(--white) !important;
+}
+
+address > a {
+  font-size: 1em;
+  color : var(--white);
 }
 
 .l-section {
@@ -140,6 +142,10 @@ h2 {
   font-size: 1.1em;
   max-width: 500px;
   text-align: center;
+}
+
+.social > a {
+  text-decoration: none;
 }
 
 .service {
